@@ -1,0 +1,20 @@
+/* This file is based on Docutils' FAQ page */
+
+/* Use these two if the main document direction is RTL */
+body { direction: rtl; }
+div.sidebar { float: left !important; }
+
+/* The next 3 rules are very useful in documents containing pieces
+of code in english */
+/* Use this if you all your literal blocks (::) are LTR */
+pre {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your inline literals (``) are LTR */
+tt {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your interpretted text (`) is LTR */
+cite {direction: ltr; unicode-bidi: embed; }
+
+/* Allow manual direction override by class directive and roles */
+.rtl { direction: rtl; }
+.ltr { direction: ltr; }
+.rle { direction: rtl; unicode-bidi: embed; }
+.lre { direction: ltr; unicode-bidi: embed; }
