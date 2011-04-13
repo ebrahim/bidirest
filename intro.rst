@@ -40,6 +40,12 @@ And generate ODT output by running::
  
             Some LTR paragraph.
 
+          ODT writer of Docutils doesn't support more than one class for each
+          container and uses only the first one. So it is not possible to have
+          a generic ``rtl`` style.
+          However HTML writer supports multiple classes which lets us use a
+          single ``rtl`` class everywhere.
+
 .. note:: I haven't been able to get ODT to support embedding directions
           using roles yet.
 
